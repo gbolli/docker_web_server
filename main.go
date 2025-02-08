@@ -14,7 +14,7 @@ func main() {
 	m.HandleFunc("/", handlePage)
 
 	addr := os.Getenv("PORT")
-	
+
 	srv := http.Server{
 		Handler:      m,
 		Addr:         addr,
